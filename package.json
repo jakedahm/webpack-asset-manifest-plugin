@@ -1,0 +1,25 @@
+{
+  "name": "webpack-asset-manifest-plugin",
+  "version": "1.0.0",
+  "description": "Webpack plugin for generating an asset manifest with grouped entry chunks",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jakedahm/webpack-asset-manifest-plugin.git"
+  },
+  "keywords": [
+    "Webpack",
+    "manifest",
+    "assets",
+    "chunks"
+  ],
+  "author": "Jake Dahm <jakedahm@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jakedahm/webpack-asset-manifest-plugin/issues"
+  },
+  "homepage": "https://github.com/jakedahm/webpack-asset-manifest-plugin#readme"
+}

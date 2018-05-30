@@ -1,5 +1,6 @@
 const fs = require('fs');
 const path = require('path');
+const url = require('url');
 
 class WebpackAssetManifestPlugin {
   constructor(opts) {
@@ -16,13 +17,13 @@ class WebpackAssetManifestPlugin {
         if (group.name) {
           const groupFiles = group
             .getFiles()
-            .map(file => path.join(compiler.options.output.publicPath, file));
+            .map(file => url.resolve(compiler.options.output.publicPath, file));
           manifest[group.name] = {
             files: groupFiles,
             chunks: group.getChildren().reduce((chunks, chunk) => {
               const files = chunk.chunks.reduce((items, item) => {
                 item.files.forEach(file => {
-                  const item = path.join(
+                  const item = url.resolve(
                     compiler.options.output.publicPath,
                     file
                   );
@@ -31,7 +32,7 @@ class WebpackAssetManifestPlugin {
                     groupFiles.indexOf(item) === -1
                   ) {
                     items.push(
-                      path.join(compiler.options.output.publicPath, file)
+                      url.resolve(compiler.options.output.publicPath, file)
                     );
                   }
                 });

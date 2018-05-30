@@ -1,6 +1,6 @@
 {
   "name": "webpack-asset-manifest-plugin",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Webpack plugin for generating an asset manifest with grouped entry chunks",
   "main": "index.js",
   "scripts": {

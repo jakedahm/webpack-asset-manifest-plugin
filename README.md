@@ -3,6 +3,10 @@ Webpack plugin for generating an asset manifest with grouped entry chunks. The i
 
 Using this plugin allows you to determine which assets are needed for a given entry dynamically.
 
+[![npm](https://img.shields.io/npm/v/webpack-asset-manifest-plugin.svg)](https://www.npmjs.com/package/webpack-asset-manifest-plugin)
+[![npm](https://img.shields.io/npm/l/webpack-asset-manifest-plugin.svg)](https://github.com/jakedahm/webpack-asset-manifest-plugin/blob/master/LICENSE)
+[![npm](https://img.shields.io/npm/dt/webpack-asset-manifest-plugin.svg)](https://www.npmjs.com/package/webpack-asset-manifest-plugin)
+
 ## Installation
 
 ```sh
